@@ -33,6 +33,8 @@
             <form method="post">
               {% csrf_token %}
               {{ form.as_p }}
+              <div class="input-group mb-3">
+                <div class="g-recaptcha" data-sitekey="6LcWB6saAAAAACUPqykWy4fOmExoWw31W_l_w6Ex"></div>
               <button  class="btn btn-success col-md-12 text-center" type="submit">Login</button> <br>
               <p><a href="{% url "password_reset" %}">Admin: Forgotten your password?</a></p>
               <p><a href="{% url "forgot_password" %}">Student or Teacher: Forgotten your password?</a></p>
@@ -48,6 +50,7 @@
 
     <!-- Core plugin JavaScript-->
     <script src="{% static '/info/bootstrap/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   </body>
 
