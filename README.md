@@ -169,3 +169,13 @@ This will delete all present attendance data and create new attendance objects f
 **Also DEBUG should be kept false during production**  
 
 (remember not to use any space across equals-to("==") sign and also write everything without quotes)
+
+To stop git from tracking your virtualenviroment cfg file once its already being tracked use:
+
+```bash
+git rm --cached virtualenvname/pyvenv.cfg
+```
+
+```bash
+git commit -m "Stop tracking virtualenvname/pyvenv.cfg
+```
