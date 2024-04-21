@@ -177,5 +177,5 @@ git rm --cached virtualenvname/pyvenv.cfg
 ```
 
 ```bash
-git commit -m "Stop tracking virtualenvname/pyvenv.cfg
+git commit -m "Stop tracking virtualenvname/pyvenv.cfg"
 ```

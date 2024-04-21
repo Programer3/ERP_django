@@ -80,6 +80,7 @@ celerybeat-schedule
 *.sage.py
 
 # dotenv
+ERP_django/
 .env
 .cfg
 ERP_django/pyvenv.cfg
