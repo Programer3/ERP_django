@@ -2,66 +2,92 @@
 
 A college management system built using Django framework. It is designed for interactions between students and teachers. Features include attendance, marks and time table.
 
-Original Inspiration : [College-ERP](https://github.com/samarth-p/College-ERP) and its pull requests.
+Original Inspiration and Most of the Source Code : [College-ERP](https://github.com/samarth-p/College-ERP) and its pull requests.
 
 ## Installation
 
-Creating a python virtual enviroment to not loose or impact other projects:
+Download the Zip from the green "Code" button and then Unzip it,
+
+OR use the following command in desired folder to clone the repository:
 
 ```bash
-python -m venv env
-source env/bin/activate
+git clone https://github.com/Programer3/ERP_django.git
+```
 
-Now swithching betwennn any enviroments with name Name1 & name2
+Install [Python](https://www.python.org/downloads/) from here then,
+
+> #### MAKE SURE TO TICK "ADD TO ENVIROMENT VARIABLES" DURING INSTALLATION OF PYTHON
+
+Now Navigate to the project directory and do the following:
+
+Create a python virtual enviroment to not loose or impact other projects:
 
 ```bash
-python -m venv Name1
-source Name1/bin/activate
-python -m venv Name2
-source Name2/bin/activate
+python -m venv enviroment_name
+```
 
+Activate that newwely created enviroment :
 
-Python and Django need to be installed
-Additional libraries should be imported as well
 ```bash
-pip install django
-pip install djangorestframework
-pip install djoser
-Just run this command pip install -r requirements.txt in main project directory
+source enviroment_name/bin/activate
+```
+
+Now Additional libraries should be installed. So, Just run this command in main project directory :
+
+```bash
+pip install -r requirements.txt
+```
+
+To switch between any enviroments with name enviroment_name1 & enviroment_name2 use :
+
+```bash
+python -m venv enviroment_name1
+source enviroment_name1/bin/activate
+python -m venv enviroment_name2
+source enviroment_name2/bin/activate
 ```
 
 ## Usage
 
-Go to the College-ERP folder and run
+Go to the ERP_django folder and run
 
 ```bash
 python manage.py runserver
 ```
+
+👆 to run the ERP server
 
 Then go to the browser and enter the url **<http://127.0.0.1:8000/>**
 
 ## Login
 
 The login page is common for students and teachers.  
-The username is their name and password for everyone is 'project123'.
 
-The student added will be given the credentials :
+The username is their name and password for everyone (including admin) is 'project123' by default.
+
+The student added will be given the credentials to login:
 
 Username- Name  
 
 Password- USN
 
-The teacher added will be given the credentials :
+The teacher added will be given the credentials to login:
 
 Username- Name
 
 Password- Name
 
 Example usernames:  
-student- 'samarth'  
-teacher- 'trisila'  
+> student- 'samarth'  
+> teacher- 'trisila'  
 
-You can access the django admin page at **<http://127.0.0.1:8000/admin>** and login with username 'admin' and the above password.
+You can access the django admin page at **<http://127.0.0.1:8000/admin>**
+
+default admin credentials are:
+
+Username- admin
+
+Password- project123
 
 Also a new admin user can be created using
 
@@ -69,13 +95,19 @@ Also a new admin user can be created using
 python manage.py createsuperuser
 ```
 
+👆 this can be also used to add new student and teacher/ faculty members details.
+
+### Don't forget your PASSWORDS
+
 ## Users
 
-New students and teachers can be added through the admin page. A new user needs to be created for each.
+New students and teachers can be added through the admin page. A new user needs to be created for each of.
 
 The admin page is used to modify all tables such as Students, Teachers, Departments, Courses, Classes etc.
 
 **For more details regarding the system and features please refer the reports included.**
+
+# Original Readme text
 
 ## Update (29/11/2020)
 
@@ -127,17 +159,13 @@ This will delete all present attendance data and create new attendance objects f
 
 ![alt text](https://imgur.com/PvCsNeB.png)
 
-//Secret key should ke kept secret in a file named ".env" file which is ignored by .gitignore//  
-therefore install a package named "environ" via "pip install environ" command on CLI to read
-the contents of .env file.
-In the same directory of settings.py create a file named ".env" and then put your secret key there
-and all the other sensitive passwords which an attacker might misuse such as creating own hashes for website using
-secret key.
-Also DEBUG should be kept false during production
+**Secret key and Debug value should ke kept secret in a file named ".env" file which is ignored by .gitignore and can be read using "environ" package coded in**  
 
-CONTENTS OF .env file should look like:
+**In the same directory of settings.py create a file named ".env" and then put your secret key, Debug value and all the other sensitive passwords which an attacker might misuse such as creating own hashes for website, like :  
 
-SECRET_KEY=xyz
-DEBUG=FALSE
+>SECRET_KEY=xyz  
+>DEBUG=FALSE
+
+**Also DEBUG should be kept false during production**  
 
 (remember not to use any space across equals-to("==") sign and also write everything without quotes)

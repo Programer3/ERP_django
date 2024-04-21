@@ -1,0 +1,30 @@
+// Remove "previous_" from this files name and delete every line which has "//" in front of them, then
+// Use `pip install -r requirements.txt` to install modules listed in this file OR
+// Use `pip freeze > requirements.txt` to list all current installed mdules in your enviroment to a new requirements.txt files (if none exists)
+// List of modules is separated by newline characters is written below:
+asgiref
+certifi
+cffi
+charset-normalizer
+cryptography
+defusedxml
+Django
+django-environ
+django-templated-mail
+djangorestframework
+djangorestframework-simplejwt
+djoser
+environ
+idna
+oauthlib
+pycparser
+PyJWT
+python3-openid
+pytz
+requests
+requests-oauthlib
+social-auth-app-django
+social-auth-core
+sqlparse
+tzdata
+urllib3
