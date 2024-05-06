@@ -22,29 +22,24 @@ Now Navigate to the project directory and do the following:
 
 Create a python virtual enviroment to not loose or impact other projects:
 
+run `venv.bat` file for windows users, then activate that newwely created enviroment
+
+This Script will automatically Install all Additional libraries.
+
+Now the terminal will look like this :
+
 ```bash
-python -m venv enviroment_name
+(your_virtual_env) D:\CODES\python\ERP_django>
 ```
 
-Activate that newwely created enviroment :
+to activate/deactivate manually use these in Windows
 
 ```bash
-source enviroment_name/bin/activate
+D:\CODES\python\ERP_django> your_virtual_env\Scripts\activate.bat
 ```
 
-Now Additional libraries should be installed. So, Just run this command in main project directory :
-
 ```bash
-pip install -r requirements.txt
-```
-
-To switch between any enviroments with name enviroment_name1 & enviroment_name2 use :
-
-```bash
-python -m venv enviroment_name1
-source enviroment_name1/bin/activate
-python -m venv enviroment_name2
-source enviroment_name2/bin/activate
+(your_virtual_env) D:\CODES\python\ERP_django> deactivate
 ```
 
 ## Usage
