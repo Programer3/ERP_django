@@ -4,25 +4,57 @@ A college management system built using Django framework. It is designed for int
 
 Original Inspiration and Most of the Source Code : [College-ERP](https://github.com/samarth-p/College-ERP) and its pull requests.
 
+# TABLE OF CONTENTS
+
+- [College-ERP](#college-erp)
+- [TABLE OF CONTENTS](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Manual Installation](#manual-installation)
+  - [Usage](#usage)
+  - [Example usernames](#example-usernames)
+  - [Admin](#admin)
+  - [Users](#users)
+  - [Database](#database)
+  - [Original Readme text](#original-readme-text)
+  - [Update (29/11/2020)](#update-29112020)
+  - [Screenshots](#screenshots)
+    - [Teacher Page](#teacher-page)
+    - [Student Page](#student-page)
+    - [Admin Page](#admin-page)
+  - [Contributing](#contributing)
+  - [Authors](#authors)
+  - [License](#license)
+
+## Features
+
+- Attendance
+- Marks
+- Time Table
+- Student and Teacher Login
+- Admin Page
+
 ## Installation
 
-Download the Zip from the green "Code" button and then Unzip it,
+1. Download the Zip from the green "Code" button and then Unzip it,
 
-OR use the following command in desired folder to clone the repository:
+    OR
 
-```bash
-git clone https://github.com/Programer3/ERP_django.git
-```
+    use the following command in desired folder to clone the repository:
 
-Install [Python](https://www.python.org/downloads/) from here then,
+    ```bash
+    git clone https://github.com/Programer3/ERP_django.git
+    ```
 
-> #### MAKE SURE TO TICK "ADD TO ENVIROMENT VARIABLES" DURING INSTALLATION OF PYTHON
+1. Install [Python](https://www.python.org/downloads/) from here then,
 
-Now Navigate to the project directory and do the following:
+2. > #### MAKE SURE TO TICK "ADD TO ENVIROMENT VARIABLES" DURING INSTALLATION OF PYTHON
 
-Create a python virtual enviroment to not loose or impact other projects:
+3. Now Navigate to the project directory and do the following:
 
-run `venv.bat` file for windows users, then activate that newwely created enviroment
+4. Create a python virtual enviroment to not loose or impact other projects:
+
+6. run `venv.bat` file for windows users, then activate that newwely created enviroment
 
 This Script will automatically Install all Additional libraries.
 
@@ -32,19 +64,27 @@ Now the terminal will look like this :
 (your_virtual_env) D:\CODES\python\ERP_django>
 ```
 
-to activate/deactivate manually use these in Windows
+## Manual Installation
 
-```bash
-D:\CODES\python\ERP_django> your_virtual_env\Scripts\activate.bat
-```
+5. Create a virtual enviroment using `python -m venv virtualenvname`
 
-```bash
-(your_virtual_env) D:\CODES\python\ERP_django> deactivate
-```
+6. activate/deactivate manually use these in Windows Command Prompt after creating virtual enviroment:
+
+    ```bash
+    D:\ERP_django> your_virtual_env\Scripts\activate
+    ```
+
+    ```bash
+    (your_virtual_env) D:\ERP_django> deactivate
+    ```
+
+7. Install the requirements using `pip install -r requirements.txt`
 
 ## Usage
 
-Go to the ERP_django folder and run
+The login page is common for students and teachers.  
+
+Go to the ERP_django root folder and run
 
 ```bash
 python manage.py runserver
@@ -52,29 +92,33 @@ python manage.py runserver
 
 👆 to run the ERP server
 
-Then go to the browser and enter the url **<http://127.0.0.1:8000/>**
+Then go to the browser and enter the url for students and teachers:  **<http://127.0.0.1:8000/>**
 
-## Login
+👆 to access the login page
 
-The login page is common for students and teachers.  
+The username is their name and password for everyone (including admin) is 'project123' by default. (FOR DEVELOPMENT ONLY)
 
-The username is their name and password for everyone (including admin) is 'project123' by default.
+The student added will be given the credentials to login according to following format:
 
-The student added will be given the credentials to login:
-
-Username- Name  
+Username- Name
 
 Password- USN
 
-The teacher added will be given the credentials to login:
+The teacher added will be given the credentials to login as following format:
 
 Username- Name
 
 Password- Name
 
-Example usernames:  
-> student- 'samarth'  
-> teacher- 'trisila'  
+## Example usernames
+>
+> student- samarth, Anna  
+> teacher- trisila, Guru  
+> admin- admin
+
+## Admin
+
+The admin page is common for students and teachers.
 
 You can access the django admin page at **<http://127.0.0.1:8000/admin>**
 
@@ -92,7 +136,7 @@ python manage.py createsuperuser
 
 👆 this can be also used to add new student and teacher/ faculty members details.
 
-### Don't forget your PASSWORDS
+[#TIP] Don't forget your PASSWORDS
 
 ## Users
 
@@ -102,7 +146,13 @@ The admin page is used to modify all tables such as Students, Teachers, Departme
 
 **For more details regarding the system and features please refer the reports included.**
 
-# Original Readme text
+## Database
+
+The database used is sqlite3.
+
+The database file is stored in the ERP_django root folder.
+
+## Original Readme text
 
 ## Update (29/11/2020)
 
@@ -174,3 +224,21 @@ git rm --cached virtualenvname/pyvenv.cfg
 ```bash
 git commit -m "Stop tracking virtualenvname/pyvenv.cfg"
 ```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+Currenntly, the project is in development phase and is not ready for production.
+
+## Authors
+
+- [Aman (Maintainer)](https://github.com/Programer3)
+- [Ujjwal](https://github.com/ujjwalshriv3)
+- [Krishna](https://github.com/krishnasingh34)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
