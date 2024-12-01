@@ -1,0 +1,6 @@
+How to Select the Virtual Environment
+If you miss the popup or choose not to set it at that moment, you can manually select the virtual environment using the following steps:
+
+    Open Command Palette: Press Ctrl + Shift + P (or Cmd + Shift + P on macOS) to open the Command Palette.
+    Select Interpreter: Type Python: Select Interpreter and hit Enter. This will display a list of available Python interpreters, including any virtual environments detected by VS Code.
+    Choose Your Environment: Look for your newly created virtual environment in the list (it typically appears with its path). Select it to set it as the interpreter for your workspace.
